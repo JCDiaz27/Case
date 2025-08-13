@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>John Carlo - .NET Windows Developer</title>
+    <meta name="description" content="John Carlo Diaz - Results-driven .NET Windows Application Developer specializing in C#, WinForms, WPF, and SQL Server solutions." />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <header>
-      <nav id="desktop-nav">
-        <div class="logo">John Carlo</div>
+      <nav id="desktop-nav" role="navigation" aria-label="Main navigation">
+        <div class="logo" aria-label="John Carlo Portfolio">John Carlo</div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -24,7 +25,7 @@
       <nav id="hamburger-nav">
         <div class="logo">John Carlo</div>
         <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
@@ -41,16 +42,17 @@
     
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="John Carlo Diaz profile picture" loading="eager" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">John Carlo</h1>
-        <p class="section__text__p2">Software Developer</p>
+        <p class="section__text__p2">.NET Windows Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/Resume.pdf')"
+            aria-label="Download John Carlo's Resume PDF"
           >
             Download CV
           </button>
@@ -64,16 +66,19 @@
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/john-carlo-diaz-763975248/'"
+            loading="lazy"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/JCDiaz27/'"
+            loading="lazy"
           />
         </div>
       </div>
     </section>
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -81,8 +86,9 @@
         <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
-            alt="Profile picture"
+            alt="John Carlo professional photo"
             class="about-pic"
+            loading="lazy"
           />
         </div>
         <div class="about-details-container">
@@ -92,15 +98,17 @@
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
+                loading="lazy"
               />
               <h3>Experience</h3>
-              <p>6 months <br />Software Developer</p>
+              <p>4+ years<br />.NET Windows Developer</p>
             </div>
             <div class="details-container">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
+                loading="lazy"
               />
               <h3>Education</h3>
               <p>B.Sc. Bachelors Degree<br />Information Technology</p>
@@ -108,10 +116,21 @@
           </div>
           <div class="text-container">
             <p>
-              I'm a passionate software developer with a strong foundation in programming and database management.
-              My journey in technology began with a curiosity for how things work and a desire to build innovative solutions.
-              Over the years, I’ve developed a love for solving complex problems and have enjoyed working on both front-end and back-end development.
-              I thrive on collaboration and am always eager to learn and grow in the ever-evolving tech landscape.
+              I am a results-driven .NET Windows Application Developer with expertise in building
+              custom desktop solutions using C#, .NET Framework, WinForms, and WPF.
+              I specialize in designing intuitive UIs, integrating SQL Server databases,
+              and modernizing legacy systems to high-performance applications.
+              My focus is always on delivering clean, maintainable code and creating software
+              that solves real business problems efficiently.
+            </p>
+            <br />
+            <p>
+              Over the past 4 years, I have developed and maintained Windows desktop applications
+              for clients in retail, logistics, and HR management. My work includes
+              building robust back-end systems with SQL Server, integrating third-party APIs,
+              and creating reporting tools that turn raw data into actionable insights.
+              I have successfully migrated legacy VB6 systems to modern .NET architectures
+              and delivered automation tools that reduced manual workflows by over 60%.
             </p>
           </div>
         </div>
@@ -121,21 +140,24 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
+        loading="lazy"
       />
     </section>
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Technical Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Programming</h2>
+            <h2 class="experience-sub-title">Desktop Development</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>C#</h3>
@@ -147,9 +169,10 @@
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
-                  <h3>Java</h3>
+                  <h3>.NET Framework</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -158,9 +181,34 @@
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
-                  <h3>.NET Framework</h3>
+                  <h3>WinForms</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>WPF</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Crystal Reports</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -169,6 +217,60 @@
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>UI/UX Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database & Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>SQL Server</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>ADO.NET</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>API Integration</h3>
@@ -180,69 +282,22 @@
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
-                />
-                <div>
-                  <h3>UI/UX</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Front/Back End Development</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Database Management</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL Server</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS Lightsail</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>AWS Lightsail</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -255,8 +310,10 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
+        loading="lazy"
       />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -266,53 +323,80 @@
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
-                alt="Project 1"
+                alt="Inventory Management System Screenshot"
                 class="project-img"
+                loading="lazy"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Inventory, Sales, Ordering<br>and Management System</h2>
+            <h2 class="experience-sub-title project-title">
+              Inventory & Sales Management System
+            </h2>
+            <div class="project-description">
+              <p>
+                Complete desktop application with barcode integration, supplier management, 
+                and SQL Server backend. Features real-time inventory tracking and automated reporting.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">WinForms</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Crystal Reports</span>
+              </div>
+            </div>
             <div class="btn-container">
-              <!-- <button
+              <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/JCDiaz27/'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="showProjectDetails('project1')"
               >
-                Demo
-              </button> -->
+                Details
+              </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
-                alt="Project 2"
+                alt="Yield Calculator Application Screenshot"
                 class="project-img"
+                loading="lazy"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Automated Statistical<br>Yield Limit Calculator</h2>
+            <h2 class="experience-sub-title project-title">
+              Automated Statistical Yield Calculator
+            </h2>
+            <div class="project-description">
+              <p>
+                Desktop tool that automates production yield calculations, replacing complex 
+                manual spreadsheets with a fast, accurate WPF application.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">WPF</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">MVVM</span>
+              </div>
+            </div>
             <div class="btn-container">
-              <!-- <button
+              <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/JCDiaz27/'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="showProjectDetails('project2')"
               >
-                Demo
-              </button> -->
+                Details
+              </button>
             </div>
           </div>
-          
-
-
         </div>
       </div>
       <img
@@ -320,8 +404,10 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
+        loading="lazy"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -331,6 +417,7 @@
             src="./assets/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
+            loading="lazy"
           />
           <p><a href="mailto:johncarlo.diaz27@gmail.com">johncarlo.diaz27@gmail.com</a></p>
         </div>
@@ -339,11 +426,28 @@
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
+            loading="lazy"
           />
-          <p><a href="https://www.linkedin.com/in/john-carlo-diaz-763975248/">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/john-carlo-diaz-763975248/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
       </div>
+      
+      <div class="contact-form-container">
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-color-1">Send Message</button>
+        </form>
+      </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -355,7 +459,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 JCDiaz. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 John Carlo Diaz. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
