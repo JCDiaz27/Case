@@ -334,12 +334,12 @@ section {
   display: flex;
 }
 
-/* Profile picture - circular */
+/* Profile picture - soft edge square */
 #profile .section__pic-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 2rem;
 }
 
 /* About picture - original rectangular crop */
